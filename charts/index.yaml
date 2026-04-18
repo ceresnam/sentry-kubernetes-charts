@@ -1,0 +1,83 @@
+apiVersion: v1
+entries:
+  clickhouse:
+  - apiVersion: v1
+    appVersion: 23.8.16.16
+    created: "2026-04-18T19:21:40.188510429Z"
+    deprecated: true
+    description: ClickHouse is an open source column-oriented database management
+      system capable of real time generation of analytical data reports using SQL
+      queries
+    digest: 2237b5b3ee5b783e031204d8b8c60f2271def296f3a55ddfd8e5c75d91d6f493
+    home: https://clickhouse.yandex/
+    icon: https://clickhouse.yandex/images/logo.png
+    keywords:
+    - clickhouse
+    - olap
+    - database
+    name: clickhouse
+    sources:
+    - https://github.com/sentry-kubernetes/charts
+    urls:
+    - https://sentry-kubernetes.github.io/charts/clickhouse-4.1.1.tgz
+    version: 4.1.1
+  sentry:
+  - apiVersion: v2
+    appVersion: 26.2.1
+    created: "2026-04-18T19:21:40.215139438Z"
+    dependencies:
+    - condition: sourcemaps.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.9.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.11.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 29.3.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.5.1
+    - condition: nginx.enabled
+      name: nginx
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.7.0
+    description: A Helm chart for Kubernetes
+    digest: 83fb4e058aedc7baddfe3b43acc86733c0b5ded6f19cf84853060d6bc7470fa2
+    home: https://github.com/sentry-kubernetes/charts
+    icon: https://raw.githubusercontent.com/sentry-kubernetes/charts/refs/heads/develop/docs/logo.png
+    maintainers:
+    - name: sentry-kubernetes
+    name: sentry
+    sources:
+    - https://github.com/sentry-kubernetes/charts/tree/develop/charts/sentry
+    type: application
+    urls:
+    - https://sentry-kubernetes.github.io/charts/sentry-30.0.1.tgz
+    version: 30.0.1
+  sentry-kubernetes:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-04-18T19:21:40.215452881Z"
+    description: A Helm chart for sentry-kubernetes (https://github.com/getsentry/sentry-kubernetes)
+    digest: 94c9b0b617d6450adba2106642d1215c0cfe5e0afc508c9af0ce5320f9d63bb9
+    home: https://github.com/getsentry/sentry-kubernetes
+    icon: https://sentry-brand.storage.googleapis.com/sentry-glyph-white.png
+    keywords:
+    - sentry
+    - report kubernetes events
+    maintainers:
+    - name: sentry-kubernetes
+    name: sentry-kubernetes
+    sources:
+    - https://github.com/getsentry/sentry-kubernetes
+    - https://github.com/sentry-kubernetes/charts
+    type: application
+    urls:
+    - https://sentry-kubernetes.github.io/charts/sentry-kubernetes-0.4.0.tgz
+    version: 0.4.0
+generated: "2026-04-18T19:21:40.187183863Z"
