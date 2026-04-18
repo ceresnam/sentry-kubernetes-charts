@@ -3,12 +3,12 @@ entries:
   clickhouse:
   - apiVersion: v1
     appVersion: 23.8.16.16
-    created: "2026-04-18T19:21:40.188510429Z"
+    created: "2026-04-18T19:32:43.878563992Z"
     deprecated: true
     description: ClickHouse is an open source column-oriented database management
       system capable of real time generation of analytical data reports using SQL
       queries
-    digest: 2237b5b3ee5b783e031204d8b8c60f2271def296f3a55ddfd8e5c75d91d6f493
+    digest: 41d687895ba217696e96b1b2b771e7b65d3489d085770f17a0f0e573c6e2122f
     home: https://clickhouse.yandex/
     icon: https://clickhouse.yandex/images/logo.png
     keywords:
@@ -24,7 +24,7 @@ entries:
   sentry:
   - apiVersion: v2
     appVersion: 26.2.1
-    created: "2026-04-18T19:21:40.215139438Z"
+    created: "2026-04-18T19:32:43.905718972Z"
     dependencies:
     - condition: sourcemaps.enabled
       name: memcached
@@ -47,7 +47,7 @@ entries:
       repository: oci://registry-1.docker.io/cloudpirates
       version: 0.7.0
     description: A Helm chart for Kubernetes
-    digest: 83fb4e058aedc7baddfe3b43acc86733c0b5ded6f19cf84853060d6bc7470fa2
+    digest: a8dbf1e3d177c9dd20d83dd92767dccd91ca576cde9df61e124713dd070b173a
     home: https://github.com/sentry-kubernetes/charts
     icon: https://raw.githubusercontent.com/sentry-kubernetes/charts/refs/heads/develop/docs/logo.png
     maintainers:
@@ -62,9 +62,9 @@ entries:
   sentry-kubernetes:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-18T19:21:40.215452881Z"
+    created: "2026-04-18T19:32:43.90605648Z"
     description: A Helm chart for sentry-kubernetes (https://github.com/getsentry/sentry-kubernetes)
-    digest: 94c9b0b617d6450adba2106642d1215c0cfe5e0afc508c9af0ce5320f9d63bb9
+    digest: 4284d7306f93a2cb62e8e042a5112ed0ca776b2b07b7df4a98615cea529ac6a7
     home: https://github.com/getsentry/sentry-kubernetes
     icon: https://sentry-brand.storage.googleapis.com/sentry-glyph-white.png
     keywords:
@@ -80,4 +80,4 @@ entries:
     urls:
     - https://sentry-kubernetes.github.io/charts/sentry-kubernetes-0.4.0.tgz
     version: 0.4.0
-generated: "2026-04-18T19:21:40.187183863Z"
+generated: "2026-04-18T19:32:43.876584282Z"
